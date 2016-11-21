@@ -1,0 +1,123 @@
+.m-search {
+  .searchCnt {
+    padding: 40px 0;
+    .searchCntWrap {
+      width: 40%;
+      margin: 0 auto;
+      .u-searchBox {
+        position: relative;
+        .btn {
+          position: absolute;
+          right: 5px;
+          top: 0;
+          bottom: 0;
+          border: 0;
+          background-color: transparent;
+        }
+        .searchipt {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .searchResult {
+    .item{
+      max-height:300px;
+      list-style-type: none;
+    }
+  }
+
+}
+.m-modal{
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  &-transition{
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  &-enter, &-leave {
+    opacity: 0;
+  }
+}
+.m-pager{
+
+}
+.m-notify {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  .notify{
+    position: relative;
+    width: 20rem;
+    background-color: #fff;
+    margin-right: 1rem;
+    border: 1px solid #eaf8fe;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    &.success,
+    &.warning,
+    &.failed,
+    &.info {
+      padding-left: 4rem;
+    }
+    &.success {
+      .tipIcon {
+        color: #87d068;
+      }
+    }
+    &.info {
+      .tipIcon {
+        color: #2db7f5;
+      }
+    }
+    &.warning {
+      .tipIcon {
+        color: #fa0;
+      }
+    }
+    &.failed {
+      .tipIcon {
+        color: #f50;
+      }
+    }
+  }
+  .tipIcon{
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    left: 1rem;
+    margin-top: -.75rem;
+    line-height: 1.5rem;
+  }
+  .closeIcon{
+    position: absolute;
+    top: .2rem;
+    right: .5rem;
+    font-size: .8rem;
+    color: #ccc;
+
+    &:hover{
+      color: #969696;
+    }
+  }
+  &-transition{
+    transition: opacity .5s ease;
+  }
+  &-enter{
+    opacity: 0;
+  }
+  &-leave{
+    opacity: 0;
+    position: absolute;
+  }
+  &-move{
+    transition: transform .5s cubic-bezier(.55,0,.1,1);
+  }
+}

@@ -1,0 +1,10 @@
+.s-bgG{
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  background-color: #5dd46d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#07712c), to(#5dd46d));
+  background-image: -webkit-linear-gradient(top, #07712c 0, #5dd46d 100%);
+  background-image: -o-linear-gradient(top, #07712c 0, #5dd46d 100%);
+  background-image: linear-gradient(to bottom, #07712c 0, #5dd46d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07712c', endColorstr='#5dd46d', GradientType=0);
+  background-repeat: repeat-x;
+}
